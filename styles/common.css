@@ -1,0 +1,46 @@
+/* Stylesheet made by /u/Echohawkdown
+ * Version 0.1
+ * Last Edited 2014/01/21
+ */
+ 
+ body, #wrapper, #editor, #markdown-output, textarea, input {
+  font-family: verdana, arial, helvetica, sans-serif;
+ }
+ 
+ body { background: #ddf; }
+ 
+ #wrapper {
+  width: 90%;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 25px;
+  height: 100%;
+  min-height: 100%;
+  background: #fff;
+  font-size: 0.8em;
+}
+
+h3 { font-size: 1em; font-weight: bold; }
+
+textarea { 
+  resize: vertical; 
+  margin: 10px auto;
+  width: 500px;
+  height: 100px;
+}
+
+input[type="button"] {
+  border: none;
+  border-radius: none;
+  padding: 3px;
+  background: #8f8;
+}
+
+input[type="text"] { border: none; border-bottom: 1px dotted black; background: #eee;}
+
+small {
+  font-size: 0.75em;
+}
+
+.footer { text-align: center; }
+.hidden { display: none; }

@@ -1,0 +1,6 @@
+# Ignore everything in the /samples directory
+samples/
+samples/*
+
+# Don't upload jQuery or jQuery UI
+scripts/jquery-*

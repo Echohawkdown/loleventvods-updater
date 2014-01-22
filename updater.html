@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>/r/LoLEventVODS Updater</title>
+    
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="scripts/jquery-ui-1.10.4.min.js"></script>
+    
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="editor">
+        
+        <div class="template-selection">
+          <h3>Template</h3>
+          <select id="table-template">
+            <option value="LCS">LCS</option>
+            <option value="OGN">OGN</option>
+            <option value="Challenger Series">Challenger Series</option>
+            <option value="Custom">Custom</option>
+          </select>
+        </div>
+        
+        <div class="table-settings">
+          <h3>Table Settings</h3>
+          <label for="table-title">Table title </label><input type="text" id="table-title">
+          <label for="match-format">Match numbering format </label>
+            <select id="match-format">
+              <option value="alphanumeric">A1, A2, A3, ...</option>
+              <option value="alphabetical">A, B, C, ...</option>
+              <option value="numeric">1, 2, 3, ...</option>
+            </select>
+          <label for="letter-prefix" class="">Prefix with </label><input type="text" id="letter-prefix" class="alphaonly">
+          
+          <label for="team-format">Team format </label>
+            <select id="team-format">
+              <option value="Team A">Team A</option>
+              <option value="Team 1">Team 1</option>
+              <option value="Blue Team">Blue Team</option>
+            </select>
+            <span> vs. </span>
+            <select id="team-format2">
+              <option value="Team B">Team B</option>
+              <option value="Team 2">Team 2</option>
+              <option value="Red Team">Red Team</option>
+            </select>
+        </div>
+        
+        <div id="vod-links">
+          <h3>VOD Links/IDs</h3>
+          <label for="twitch-link">Twitch </label><input type="text" id="twitch-link">
+          <label for="yt-link">YouTube </label><input type="text" id="yt-link">
+        </div>
+        
+        
+        <div id="live-edit">
+          <table>
+            <thead>
+              <tr>
+                <th align="center">#</th>
+                <th align="center" id="header-team1">Team 1</th>
+                <th align="center">vs.</th>
+                <th align="center" id="header-team2">Team 2</th>
+                <th align="center" id="twitch-picks" class="twitch">Twitch</th>
+                <th align="center" id="twitch-game" class="twitch">Twitch</th>
+                <th align="center" id="yt-picks" class="yt">YouTube</th>
+                <th align="center" id="yt-game" class="yt">YouTube</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">A <a href="http://www.table_title.com" title="Wed-Thu, January 15-16" target="_blank" class="imgScanned"></a></td>
+                <td align="center"><strong>Name #1</strong></td>
+                <td align="center">vs.</td>
+                <td align="center"><strong>Name #2</strong></td>
+                <td align="center" id="twitch-picks" class="twitch">Picks &amp; Bans</td>
+                <td align="center" id="twitch-game" class="twitch">Game Start</td>
+                <td align="center" id="yt-picks" class="yt">Picks &amp; Bans</td>
+                <td align="center" id="yt-game" class="yt">Game Start</td>
+              </tr>
+            </tbody>
+          </table>
+          <input type="button" value="+ Add Row">
+        
+        </div>
+        
+        <div id="recommended">
+          <h3>Recommended Games</h3>
+          <input type="text" id="recommended-games">
+        </div>
+        
+        <div id="contribs">
+          <h3>Covered by (Reddit name)</h3>
+          <input type="text" id="contrib-1">
+          <input type="button" value="+ Add Contributor">
+        </div>
+        
+      </div>
+      
+      <hr>
+      
+      <div id="markdown-output">
+        <textarea id="output">This is read-only! No editing here!</textarea>
+      </div>
+      
+      <div class="footer">
+        <small>Created by <a href="//reddit.com/u/Echohawkdown">Echohawkdown</a>. Idea by <a href="//reddit.com/u/osirian">osirian</a>.</small>
+      </div>
+    </div>
+    
+    <style type="text/css" id="js-styles"></style>
+    <script src="scripts/settings.js"></script>
+  </body>
+</html>
