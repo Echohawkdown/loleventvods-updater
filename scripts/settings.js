@@ -27,6 +27,14 @@
             $(this).val(letters);
         });
         
+        // Potential force letter input snippet
+        // $('#txtname').keydown(function (e) {
+          // var pressedkey = e.keyCode;
+          // if (!((pressedkey == 8) || (pressedkey == 32) || (pressedkey == 46) || (pressedkey >= 35 && pressedkey <= 40)||(pressedkey==17)||(pressedkey==18)||(pressedkey==19) || (pressedkey >= 65 && pressedkey <= 90))) {
+              // e.preventDefault();
+          // }
+        // });
+        
         // Links the team change dropdown menus
         $("#team-format").change(function() {
           var selection = $("#team-format").val();
